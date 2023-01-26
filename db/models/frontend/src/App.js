@@ -44,8 +44,6 @@ function App() {
           />
           <div className="button" onClick={addReminder}>Add Reminder</div>
         </div>
-
-
         <div className="homepage_body">
           {
             reminderList.map( reminder => (
@@ -57,12 +55,8 @@ function App() {
                 <div className="button" onClick={() => deleteReminder(reminder._id)}>Delete</div>
               </div>
             ))
-          }
-          
-
-          
+          }        
         </div>
-
       </div>
     </div>
   )
